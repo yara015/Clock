@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    color: aliceblue;
+} 
+html{
+    background:linear-gradient(45deg,rgb(54, 12, 54),rgb(0, 0, 142));
+    background-image: url("https://th.bing.com/th/id/R.43007ec83b53527bd05715f186189ed2?rik=qGFKmu8vYYj1rw&riu=http%3a%2f%2fdiyhomedecorguide.com%2fwp-content%2fuploads%2f2015%2f05%2fCheap-wall-art-ideas-2015.jpg&ehk=sWzO9Zo%2bkivtKjtcYuda%2fKEG3Psdha0XDJ%2fuhIuEESE%3d&risl=&pid=ImgRaw&r=0");
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+body{
+    position: fixed;
+    width:100%;
+    height:100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.hero{
+
+    height:50vw;
+    width:50vw;
+    border-radius:50%;
+    border:2px solid #fff;
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.7),0px 0px 20px rgba(0,0,0,0.7);
+     background-image:url("https://th.bing.com/th/id/OIP.CBTnZDMZNsuaaIG-PNbGNgHaEo?w=277&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"); 
+    background: black;
+    background-image: radial-gradient(
+        rgb(0, 0, 0),
+        rgb(3, 28, 164),
+        rgb(75, 74, 43)
+    ); 
+    background-size: cover;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+.hero ul li{
+    position:absolute;
+    text-align: center;
+    transform: rotate(calc(30deg*var(--i)));
+    inset:2%;
+}
+.hero ul li span{
+    font-size:5vw;
+    font-weight: bold;
+    transform: rotate(calc(-30deg *var(--i)));
+    display: inline-block
+}
+.hero::before{
+    content: '';
+    width:10%;
+    height:10%;
+    border-radius: 50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    position: absolute;
+}
+.needle{
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+   
+}
+.needle span{
+    height:var(--h);
+    background-color:var(--clr);
+    position:absolute;
+    border-radius:5px;
+    transform-origin:bottom;
+
+}
+.hr span{
+    width:1vw;
+}
+.mn span{
+    width:1%;
+}
+.sc span{
+    width:0.5%;
+}
+.container{
+    min-height:5%;
+    min-width:5%;
+    width: 40%;
+    height:20%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.clock{
+    width:100%;
+    height:100%;
+    background:rgba(246, 197, 251, 0.11);
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 10px;
+    backdrop-filter: blur(40px);
+}
+.container::before{
+    content:'';
+    width:30%;
+    height:50%;
+    background:#f41b75;
+    position: absolute;
+    border-radius:5px ;
+    left:-5%;
+    top:-5%;
+    z-index:-1;
+    
+}
+.container::after{
+    content:'';
+    width:30%;
+    height:110%;
+    background:#419aff;
+    position: absolute;
+    border-radius:50% ;
+    right:-10%;
+    bottom:-5%;
+    z-index:-1;
+}
+.clock span{
+    font-size:4vw;
+    width:2vw;
+    display:inline-block;
+    text-align:center;
+    position:relative;
+    padding-left:2vw;
+}
+.clock span::after{
+    font-size:1vw;
+    width:8vw;
+    bottom:-1vw;
+    left:10%;
+    position:absolute;
+}
+#hrs::after{
+    content:'HOURS' ;
+}
+#min::after{
+    content:'MINUTES' ;
+}
+#sec::after{
+    content:'SECONDS' ;
+}
+ #ampm{
+    font-size:2vw;
+     width:4vw;
+} 
